@@ -56,6 +56,10 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.hb-content {
+  background-color: var(--color-primary-dark);
+}
+
 @media only screen and (min-width: 38em) {
 
   .hb-content {

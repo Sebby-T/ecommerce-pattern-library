@@ -1,6 +1,6 @@
 ---
 name: "Catonaut"
-category: "Poster"
+category: "Mug"
 cat: "Poster Print"
 non_conflict: false
 desc: |

@@ -162,6 +162,10 @@
   border-bottom: 2px solid var(--color-primary);
 }
 
+.sub-nav:focus ~ label {
+  outline: 3px solid #000;
+}
+
 .main-nav li {
   border-bottom: 2px solid transparent;
 }

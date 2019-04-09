@@ -10,6 +10,12 @@ $subnav.on('change', function(){
   }
 });
 
+$subnav.on('keydown', function(e){
+  if(e.key=='Enter'){
+    $(this).click()
+  }
+});
+
 $sidebar.on('change', function(){
   var isOpen = $(this).prop('checked')
   $sidebar.prop('checked', false)

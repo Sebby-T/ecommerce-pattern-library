@@ -1,5 +1,5 @@
 .table-list {
-  min-width: 51em;
+  min-width: 52em;
   background-color: var(--color-secondary-dark);
 }
 .table-list  th:not(.rowhead) {

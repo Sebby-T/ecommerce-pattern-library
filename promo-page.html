@@ -2,7 +2,7 @@
 layout: inside
 ---
 
-<main id="main" role="main">
+<main id="main" role="main" tabindex="0">
   <section>
     {% pattern banners/promo-banner heading="Huge Sale Up to 25% Off!" description="Get it now, offer only lasts till April 19th" url="/promo-page/#promo-table" %}
   </section>
@@ -26,6 +26,7 @@ layout: inside
 
   <section class="push-2 wrapper gutter">
     <table>
+      <caption class="visually-hidden">Bulk Pricing Table</caption>
       <thead>
         <tr>
           <th scope="col" rowspan="2" class="valign-middle">Quantity</th>

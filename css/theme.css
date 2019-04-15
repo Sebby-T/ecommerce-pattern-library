@@ -69,3 +69,7 @@ fieldset {
   border-top: none;
   color: var(--color-primary-dark);
 }
+
+.grey {
+  background-color: var(--color-secondary-dark);
+}

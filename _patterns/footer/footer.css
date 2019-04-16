@@ -13,8 +13,8 @@
 }
 
 .foot-list a:hover {
-  color: var(--color-light-red);
-  text-decoration: none;
+  color: var(--color-yellow);
+  text-decoration: underline;
 }
 
 .secondary nav li {

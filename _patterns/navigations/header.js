@@ -22,6 +22,13 @@ $sidebar.on('change', function(){
   if (isOpen) {
     $(this).prop('checked', true)
   }
+
+});
+
+$sidebar.on('keydown', function(e){
+  if(e.key=='Enter'){
+    $(this).click()
+  }
 });
 
 $(window).scroll(function() {

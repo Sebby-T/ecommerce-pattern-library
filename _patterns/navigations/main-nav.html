@@ -7,11 +7,11 @@
 <nav class="main-nav max-length" role="navigation" id="nav">
   <ul class="list-group-inline text-center grid grid-middle">
 
-    <li class="unit xs-1 s-1 m-1-4 l-1-4 {% if page.highlight_nav == 'all products' %}current{% endif %}">
+    <li class="unit xs-1 s-1 m-1-4 l-1-4 {% if page.highlight_nav == 'all products' %}current-sec{% endif %}">
       <a class="island-1-2 block" href="/products/" aria-label="This link will bring you to the all products page.">All Products</a>
     </li>
 
-    <li class="unit xs-1 s-1 m-1-4 l-1-4 relative">
+    <li class="unit xs-1 s-1 m-1-4 l-1-4 relative {% if page.highlight_sec == 'prints' %}current-sec{% endif %}">
       <input type="checkbox" id="print-nav" class="print-check sub-nav" aria-label="This will expand the prints navigation menu when checked and will close when unchecked.">
       <label for="print-nav" class="island-1-2 w-1 block">
         <span>Art Prints</span>
@@ -31,7 +31,7 @@
       </nav>
     </li>
 
-    <li class="unit xs-1 s-1 m-1-4 l-1-4 relative">
+    <li class="unit xs-1 s-1 m-1-4 l-1-4 relative {% if page.highlight_sec == 'apparels' %}current-sec{% endif %}">
       <input type="checkbox" id="cloth-nav" class="cloth-check sub-nav" aria-label="This will expand the Apparels navigation menu when checked and will close when unchecked.">
       <label for="cloth-nav" class="island-1-2 w-1">
         <span>Apparels</span>
@@ -54,7 +54,7 @@
       </nav>
     </li>
 
-    <li class="unit xs-1 s-1 m-1-4 l-1-4 relative">
+    <li class="unit xs-1 s-1 m-1-4 l-1-4 relative {% if page.highlight_sec == 'devices' %}current-sec{% endif %}">
       <input type="checkbox" id="elec-nav" class="elec-check sub-nav" aria-label="This will expand the device cases navigation menu when checked and will close when unchecked.">
       <label for="elec-nav" class="island-1-2 w-1">
         <span>Device Cases</span>

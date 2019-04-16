@@ -13,9 +13,18 @@
   padding-right: 1.2rem;
 }
 
+.current-sec .sub-nav ~ label > span {
+  border-bottom: 2px solid var(--color-primary-dark);
+}
+
+.breadcrumb a:hover {
+  color: var(--color-light-red);
+  text-decoration: underline;
+}
+
 .active,
 .hover:hover {
-  color: var(--color-primary-light);
+  color: var(--color-light-red);
   font-family: var(--font-secondary);
 }
 
@@ -80,7 +89,8 @@
     border-bottom: none;
 }
 
-.side-nav a:hover {
+.side-nav a:hover,
+.side-nav a:focus {
   color: var(--color-primary-light);
   border-left: 2px solid var(--color-primary-light);
 }
@@ -159,10 +169,11 @@
 
 .sub-nav:checked ~ label > span {
   color: var(--color-primary-light);
-  border-bottom: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary-light);
 }
 
-.sub-nav:focus ~ label {
+.sub-nav:focus ~ label,
+.side-bar:focus ~ label {
   outline: 3px solid #000;
 }
 
@@ -225,6 +236,10 @@
 
 @media only screen and (min-width: 38em) {
 
+  .main-nav ul .current-sec {
+    border-bottom-color: var(--color-primary-dark);
+  }
+
   .main-check,
   .main-check[type="checkbox"] + label {
     display: none;
@@ -235,7 +250,11 @@
   }
 
   .main-nav li:hover {
-    border-bottom-color: var(--color-primary);
+    border-bottom-color: var(--color-primary-light);
+  }
+
+  .current-sec .sub-nav ~ label > span {
+    border-bottom: none;
   }
 
   .sub-nav:checked ~ label > span {
